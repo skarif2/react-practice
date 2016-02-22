@@ -1,5 +1,7 @@
 import React from "react";
 
+import Header from "./Header";
+import Footer from "./Footer";
 /*import Footer from "./Footer";
 import Header from "./Header";
 
@@ -27,14 +29,12 @@ export default class Layout extends React.Component {
 
 
 export default class Layout extends React.Component {
-   constructor() {
-      super();
-      this.name = "Sk";
-   }
 	render(){
-		const name = "SK Arif";
 		return(
-			<h1> Hello World! {this.name}</h1>
-		)
+			<div>
+            <Header />
+            <Footer />
+         </div>
+		);
 	}
 }
